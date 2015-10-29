@@ -326,7 +326,7 @@ function mystile_product_categories() {
 function mystile_featured_products() {
 	global $woo_options;
 	if (class_exists('woocommerce') && $woo_options[ 'woo_homepage_featured_products' ] == "true" ) {
-		echo '<h1>'.__('Featured Products', 'woothemes').'</h1>';
+		echo '<h1>'.__('Khóa học nổi bật', 'woothemes').'</h1>';
 		$featuredproductsperpage = $woo_options['woo_homepage_featured_products_perpage'];
 		echo do_shortcode('[featured_products per_page="'.$featuredproductsperpage.'"]');
 	} // End query to see if products should be displayed
@@ -335,7 +335,7 @@ function mystile_featured_products() {
 function mystile_recent_products() {
 	global $woo_options;
 	if (class_exists('woocommerce') && $woo_options[ 'woo_homepage_products' ] == "true" ) {
-		echo '<h1>'.__('Recent Products', 'woothemes').'</h1>';
+		echo '<h1>'.__('Khóa học mới nhất', 'woothemes').'</h1>';
 		$productsperpage = $woo_options['woo_homepage_products_perpage'];
 		echo do_shortcode('[recent_products per_page="'.$productsperpage.'"]');
 	} // End query to see if products should be displayed
