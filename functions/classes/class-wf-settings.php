@@ -260,7 +260,7 @@ class WF_Settings {
 		$response = false;
 		if ( ! isset( $fields[$key] ) && is_array( $data ) ) {
 			// Make sure we have a supported field type.
-			if ( ! isset( $data['type'] ) || ! in_array( $data['type'], $this->get_supported_fields() ) ) continue;
+			if ( ! isset( $data['type'] ) || ! in_array( $data['type'], $this->get_supported_fields() ) ) return false;
 
 			$this->_fields[$key] = (array)$data;
 			$response = true;
